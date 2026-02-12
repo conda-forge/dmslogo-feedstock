@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 0.7.0
+  version: "0.7.1"
 
 package:
   name: dmslogo
@@ -9,10 +9,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/d/dmslogo/dmslogo-${{ version }}.tar.gz
-  sha256: 60100b600effbea54d3e841aba1c51b4148e47d2f06483cf02aa6a06060a1bfb
+  sha256: 3e7a5e4ece33584e95f76e060fccb2db69c9f6d62324cc73321db1dd5a11d525
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
